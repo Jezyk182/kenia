@@ -70,7 +70,7 @@ h1 {
 
 .lang {
   position: relative;
-  width: 60px;
+  width: 100px;
   height: 100%;
   position:absolute;
   right: 15%;
@@ -85,7 +85,6 @@ h1 {
 
 .lang-box, .lang-ico {
   position: absolute;
-  /* top: 15px; */
   top: 50%;
   right: 0;
   transform: translateY(-70%);
@@ -99,7 +98,6 @@ h1 {
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  right: 3px;
   transition: all 200ms ease-out;
 }
 
@@ -107,7 +105,7 @@ h1 {
   position: absolute;
   top: 20px;
   /* transform: translateY(-50%); */
-  left: 0;
+  left: 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -126,13 +124,19 @@ h1 {
   display: none;
 }
 
-.visible {
-  display: block;
-}
-
 .lang-box:checked ~ .lang-ico {
   transform: rotate(90deg) translate(-50%, 2px);
 }
+
+.lang-flag {
+  width: 30px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 .container {
   display: flex;
@@ -571,16 +575,14 @@ li {
 
   .lang {
     left: 50%;
-    transform: translateX(-20%);
+    transform: translateX(-50%);
     bottom: 0px;
-    width: 170px;
     height: 70px;
+    width: 115px;
   }
 
   .lang > p, .lang-option {
     font-size: 1.7rem;
   }
-  .lang-ico, .lang-box {
-    left: 50px;
-  }
+  
 }
