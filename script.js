@@ -25,3 +25,15 @@ burger.addEventListener("click", () => {
         document.querySelector(".navbar").style.top = "0px"
     }
 })
+
+
+const langBox = document.querySelector('.lang-box');
+const langOption = document.querySelector('.lang-option:nth-child(2)');
+
+langBox.addEventListener('change', function() {
+    if (this.checked) {
+        langOption.style.display = "block";
+    } else {
+        langOption.style.display = "none";
+    }
+});
